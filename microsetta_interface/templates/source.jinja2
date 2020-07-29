@@ -109,14 +109,14 @@
                 <i>Barcode</i>
             </div>
             <div class="col-sm">
-                <i>Collection date</i>
+                <i>Collection Date</i>
             </div>
             {% if is_human %}
             <div class="col-sm">
-                <i>Sample type</i>
+                <i>Sample Type</i>
             </div>
             <div class="col-sm">
-                <i>Sample-specific survey</i>
+                <i>Sample-Specific Survey</i>
             </div>
             {% endif %}
             <div class="col-sm"></div>
@@ -138,7 +138,7 @@
                 {% if sample.ffq %}
                     Food Frequency Questionnaire<span class="fa fa-check"/>
                 {% else %}
-                            <a class="btn btn-outline-primary" href="/accounts/{{account_id}}/sources/{{source_id}}/samples/{{sample.sample_id}}/survey_templates/{{vioscreen_id}}">Food Frequency Questionnaire</a><span class="fa fa-unchecked"/>
+                            <a href="/accounts/{{account_id}}/sources/{{source_id}}/samples/{{sample.sample_id}}/survey_templates/{{vioscreen_id}}">Food Frequency Questionnaire</a><span class="fa fa-unchecked"/>
                 {% endif %}  <!-- end of if sample.ffq -->
                 </div>
                 {% endif %}  <!-- end of if is_human -->
@@ -152,7 +152,7 @@
     {% endif %}
     {% if samples|length > 1 and is_human %}
         <br>
-                    <u><i>Do I need to take more than one Food Frequency Questionnaire (FFQ)</i></u>?
+                    <u>Do I need to take more than one Food Frequency Questionnaire (FFQ)</u>?
                     If you are taking all of your samples at the same time, you will only need to complete one.
                     If you are collecting samples over time (e.g., once per week), then please consider taking an FFQ per
                     time point. The FFQs provide valuable dietary research data for the project, so researchers can better
