@@ -11,7 +11,7 @@
 {% endblock %}
 {% block content %}
     <h4>Account Details</h4>
-    <div class="container">
+    <div>
         <div class="card" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">{{account.first_name |e}} {{account.last_name |e}}</h5>
@@ -22,11 +22,11 @@
     </div>
     <hr style="border-top: dotted 1px;" />
     <h4>Sources</h4>
-    <div class="container">
+    <div>
         {%  if sources|length > 0 %}
         By clicking on a source below, you will be directed to a page where you can:<br>
          a.) Claim additional samples (using a kit ID)<br>
-         b.) Update collection information of associated samples
+         b.) Update collection information for associated samples
         <div class="list-group">
             <br>
             <div class="row">
@@ -34,7 +34,7 @@
                     <i>Name</i>
                 </div>
                 <div class="col-sm">
-                    <i>Source type</i>
+                    <i>Source Type</i>
                 </div>
             </div>
             {% for source in sources %}
@@ -58,7 +58,7 @@
         <hr style="border-top: dotted 1px;">
         <br>
         <h4>Adding a New Source</h4>
-        <i><u>How do I choose a Sample Source?</u></i><br/>
+        <u>How do I choose a Sample Source?</u><br/>
 The Microsetta Initiative is researching both host-associated and environmental microbiomes, which means looking at microbes found on and in your body as well as those found in the world around you. At the moment, we have two categories of sample sources to choose from: Human and Environmental. 
                 <br />
                 <br />
