@@ -1,8 +1,50 @@
 html * {
     font-family: "Muli", Arial, Helvetica, sans-serif;
 }
+
 a {
-    color: #00f;
+    font-weight: 600;
+    color: #00629b;
+}
+
+a:hover {
+  opacity: 0.7;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+.btn {
+   border-radius: 3rem;
+   padding: 0.325rem 1.5rem;
+   transition: all .5s;
+}
+
+.btn-primary {
+    background-color: #00c1d5;
+    color: #fff;
+      border: 2px solid #00c1d5;
+}
+
+.btn-primary:hover {
+  opacity: 0.7;
+  background-color: #00c1d5;
+  border: 2px solid #00c1d5;
+}
+
+.btn-outline-info {
+    border-radius: 3rem;
+    padding: 0.325rem 1.5rem;
+    background: none;
+    border: 2px solid #00c1d5;
+    color: #00c1d5;
+    box-sizing: border-box;
+}
+
+.btn-outline-info:hover {
+    opacity; 1!important;
+    background-color: #00c1d5;
+    color: #fff;
+    border: 2px solid #00c1d5;
 }
 
 img.resize {
