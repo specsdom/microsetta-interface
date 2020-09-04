@@ -53,19 +53,45 @@
             {% endif %}
         </div>
         <br>
-        <i><u>How do I choose a Sample Source?</u></i>
-The Microsetta Initiative is researching both host-associated and environmental microbiomes, which means looking at microbes found on and in your body as well as those found in the world around you. At the moment, we have two categories of sample sources to choose from: Human and Environmental. 
-                <br />
-                <br />
-                For example, if you are planning to collect one or many samples from yourself (e.g., fecal, saliva, skin prick, etc), then you would want to create a human source. On the other hand, if you were planning on collecting one or many samples from a surface, such as your kitchen counter, or perhaps your backyard soil, then you would want to create an environmental source. It is okay to have multiple sources. 
-                <br />
-                <br />
-    <div class="container">
-            Add a new source to this account:
-                <br />
-            <a href = "/accounts/{{ account.account_id }}/create_human_source">
-                <button class="btn btn-primary"> New Human Source</button></a>
-            <a href = "/accounts/{{ account.account_id }}/create_nonhuman_source">
-                <button class="btn btn-primary"> New Environmental Source</button></a>
+        
+        <div class="source selection">   <br> <h2 class="center">What is the Source of Your Sample?</h2><br>
+ <div class="card-deck">
+      <div class="card"><div class="card-body">
+
+      <p class="card-text">Our lab needs to know what type of sample(s) you are submitting (Aka. the “source”) . Add a new source and assign samples to it so we can perform the correct analysis in our laboratory.
+    </p><hr>
+    <p class="card-text">If you have multiples sources, you may add one source at a time. You can return to this page after you finish registering the first one.</p></div>
+    </div>
+  
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">Human Source</h4><br>
+      <p class="card-text">•  Collect sample(s) from <b>yourself</b> (e.g. fecal, saliva, skin prick, etc.)<br>
+    • Collect sample(s) from <b>someone else</b> (fecal, saliva, skin, prick, etc.)</p>
+      <div class="center"><div class="center"><a href="/accounts/{{ account.account_id }}/create_human_source" class="btn btn-primary btn-lg" href="#" role="button">Select</a></div></div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">Environmental Source</h4><br>
+      <p class="card-text">•  Collect sample(s) from a surface (e.g. kitchen counter, backyard soil, food, etc.)</p>
+    <div class="center"><a href="/accounts/{{ account.account_id }}/create_nonhuman_source" class="btn btn-primary btn-lg" href="#" role="button">Select</a></div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">Animal Source</h4><br>
+      <p class="card-text">•  Collect sample(s) from your pet or an animal (e.g. fecal, oral, skin, etc.)
+<br>
+          <b>This source is currently unavailable.</b></p>
+      <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Select</a>
+    </div>
+  </div>
+</div>
+
         </div>
+</div>
 {% endblock %}
