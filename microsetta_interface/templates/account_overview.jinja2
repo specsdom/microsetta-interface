@@ -10,17 +10,7 @@
     <li class="breadcrumb-item active" aria-current="page">Account</li>
 {% endblock %}
 {% block content %}
-    <h4>Account Details</h4>
-    <div class="container">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">{{account.first_name |e}} {{account.last_name |e}}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{account.email |e}}</h6>
-            <a href="/accounts/{{account.account_id}}/details" class="card-link">View Account Details</a>
-          </div>
-        </div>
-    </div>
-    <hr style="border-top: dotted 1px;" />
+  
     <h4>Sources</h4>
     <div class="container">
         {%  if sources|length > 0 %}
